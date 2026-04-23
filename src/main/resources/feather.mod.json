@@ -1,0 +1,6 @@
+{
+  "id": "example-mod",
+  "version": "1.0.0",
+  "main": "com.feather.example.ExampleMod",
+  "name": "Feather Example Mod"
+}
