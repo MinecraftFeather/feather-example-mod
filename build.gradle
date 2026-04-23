@@ -2,20 +2,22 @@ plugins {
     id 'java'
 }
 
-group = 'io.github.minecraftfeather.example'
+group = 'com.feather'
 version = '1.0.0'
+
+java {
+    sourceCompatibility = JavaVersion.VERSION_1_8
+    targetCompatibility = JavaVersion.VERSION_1_8
+}
 
 repositories {
     mavenCentral()
-    maven {
-        url = "https://maven.pkg.github.com/MinecraftFeather/feather-loader"
-        credentials {
-            username = System.getenv("GITHUB_ACTOR")
-            password = System.getenv("GITHUB_TOKEN") ?: "DUMMY" 
-        }
-    }
 }
 
-dependencies {
-    implementation 'io.github.minecraftfeather:feather-loader:1.0.0-SNAPSHOT'
+jar {
+    manifest {
+        attributes(
+            'Manifest-Version': '1.0'
+        )
+    }
 }
