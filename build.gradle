@@ -11,7 +11,7 @@ repositories {
         url = "https://maven.pkg.github.com/MinecraftFeather/feather-loader"
         credentials {
             username = System.getenv("GITHUB_ACTOR")
-            password = System.getenv("GITHUB_TOKEN")
+            password = System.getenv("GITHUB_TOKEN") ?: "DUMMY" 
         }
     }
 }
