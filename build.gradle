@@ -16,6 +16,7 @@ repositories {
 
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
+    compileOnly 'org.ow2.asm:asm:9.5'
 }
 
 jar {
