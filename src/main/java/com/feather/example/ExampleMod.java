@@ -1,8 +1,8 @@
-package com.example;
+package com.feather.example;
 
 import com.feather.loader.api.FeatherEvents;
 
-public class HelloMod {
+public class ExampleMod {
 
     // This method is called automatically by the ModLoader
     public void init() {
